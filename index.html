@@ -34,11 +34,13 @@
         }
 
         /* Here’s the juicy bit for posting the form submission */
+
         handleSubmit = e => {
           fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: encode({ "form-name": "contact", ...this.state })
+          })
             .then(() => alert("Success!"))
             .catch(error => alert(error));
 
@@ -58,7 +60,7 @@
               </p>
               <p>
                 <label>
-                  Your Email: <input type="text" name="email" value={email} onChange={this.handleChange} />
+                  Your Email: <input type="email" name="email" value={email} onChange={this.handleChange} />
                 </label>
               </p>
               <p>

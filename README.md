@@ -1,4 +1,4 @@
-# Netlify Form Handling Integration
+# Netlify form handling integration
 
 Examples for integrating a basic contact form with Netlify's form handling feature.
 
